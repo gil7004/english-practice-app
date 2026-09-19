@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>30일 영어회화</title>
+  <meta name="description" content="하루 하나, 30일 영어회화 연습">
+
+  <!-- 아이폰 "홈 화면에 추가" 했을 때 앱처럼 보이게 하는 설정 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="영어30일">
+  <meta name="theme-color" content="#4f6ef7">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main id="app" aria-live="polite"></main>
+
+  <nav id="tabbar" aria-label="메뉴">
+    <a href="#/today" data-tab="today"><span class="ic">📖</span>오늘</a>
+    <a href="#/list" data-tab="list"><span class="ic">🗓️</span>학습표</a>
+    <a href="#/settings" data-tab="settings"><span class="ic">⚙️</span>설정</a>
+  </nav>
+
+  <div id="toast" role="status"></div>
+
+  <noscript>이 앱은 JavaScript가 켜져 있어야 동작해요.</noscript>
+
+  <script src="data/scenarios.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
